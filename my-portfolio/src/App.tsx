@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
-import LandingPage from './Components/LandingPage';
+import LandingPage from './Components/LandingPage/LandingPage';
 
 function App() {
   return (
