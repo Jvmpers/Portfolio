@@ -47,7 +47,18 @@
   right: 170px;
   display: inline-flex;
 }
-
+.optionsIcons{
+  display: none;
+  visibility: hidden;
+}
+.hamburger{
+  visibility: hidden;
+  display: none;
+}
+.options div p:hover{
+  color: aqua;
+  cursor: pointer;
+}
 @media (max-width:2000px){
   .profile div .imgProfile{
     margin: auto 15px auto 30px; 
@@ -59,7 +70,7 @@
 }
 @media (max-width:1400px){
 .conteiner{
-/*   height: 100px; */
+  height: 120px;
 }
   .profile div .imgProfile{
     margin: auto 15px auto 30px; 
@@ -69,13 +80,33 @@
   }
   .options div p{
     visibility: hidden;
+    display: none;
+  }
+  .optionsIcons{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: space-evenly;
+    visibility:visible;
+  }
+  .optionsIcons div .icons{
+    color: #fff;
+    font-size: 35px;
+  }
+
+  .optionsIcons div .icons:hover{
+    color: aqua;
+    cursor: pointer;
+  }
+
+  .profile div p{
+    margin: auto;
   }
 }
 
 @media (max-width:650px){
   .conteiner{
     height: 70px;
-    display: flex;
   }
   .profile{
     display: flex;
@@ -88,7 +119,7 @@
   .profile div .imgProfile{
     width: 50px;
     height: 50px;
-    margin: 0px 0px 0px 10px; 
+    margin: 0px 0px 0px 1px; 
   }
   .profile div p{
     color: #fff;
@@ -97,10 +128,40 @@
     top: 10px;
     letter-spacing:1px;
   }
-  .options div p{
-    margin: 0 50px;
-  }
-  .options div p{
+
+  .options{
     visibility: hidden;
+    display: none;
+  }
+  .optionsIcons{
+    display: none;
+    visibility: hidden;
+  }
+  .hamburger{
+    display: flex;
+    position: absolute;
+    visibility: visible;
+    height: 40px;
+    width: 40px;
+    color:#fff;
+    font-size:30px;
+    bottom: 20%;
+    right: 10%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-width: 1px;
+    border-radius: 50%;
+  }
+  .hamburger p{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top:6px;
+    justify-content: center;
+  }
+  .hamburger:hover{
+    color: lightblue;
+    outline: 2px solid lightblue;
   }
 }

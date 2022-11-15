@@ -4,8 +4,10 @@ export default function LandingPage() {
   return (
     <div>
       <article className={style.homeConteiner}>
-{/*       <img className={style.imgHome} src="https://cdn.discordapp.com/attachments/671869500915843082/1041412237283295282/arbolada.jpg" alt="" />
-     */}
+        <section>
+          <h1>Hello I´am Tomás Pastore</h1>
+          <p>A full stack developer finding my first teamwork</p>
+        </section>
       </article>
       </div>
   )
