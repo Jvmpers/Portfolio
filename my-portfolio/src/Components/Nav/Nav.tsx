@@ -1,7 +1,7 @@
 import React from 'react'
 import style from "./Nav.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars,faMessage, faAddressCard, faListCheck , faBriefcase} from "@fortawesome/free-solid-svg-icons";
 export default function Nav() {
   return (
     <div className={style.divPa}>
@@ -16,10 +16,16 @@ export default function Nav() {
           <div><p>My Projects</p></div>
           <div><p>Contact</p></div>
         </div>
-        <div>
-          <p><FontAwesomeIcon icon={faBars} /></p>
+        <div className={style.optionsIcons}>
+          <div><FontAwesomeIcon className={style.icons} icon={ faAddressCard} /></div>
+          <div><FontAwesomeIcon className={style.icons} icon={ faListCheck} /></div>
+          <div><FontAwesomeIcon className={style.icons} icon={ faBriefcase} /></div>
+          <div><FontAwesomeIcon className={style.icons} icon={faMessage} /></div>
         </div>
       </header>
+      <div className={style.hamburger}>
+          <p><FontAwesomeIcon icon={faBars} /></p>
+        </div>
       </div>
   )
 }
