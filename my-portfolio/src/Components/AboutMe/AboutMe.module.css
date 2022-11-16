@@ -1,0 +1,44 @@
+.div{
+  margin :20px;
+   display: flex; 
+   background-color: #000;
+   margin: 0;
+   width: 100%;
+   z-index: -1;
+   min-height: 100vh;
+   justify-content: center;
+    background-size: cover;
+    align-items: center;
+}
+.textAbout{
+  width: 50%;
+  max-width: 1100px;
+  margin-right: 10vh;
+}
+.about{
+  color: #fff;
+  font-size: 70px;
+  text-align: center;
+
+}
+.descriptionMe{
+  color: #fff;
+  font-size: 45px;
+  text-align: center;
+}
+.coverImg{
+  margin: 20px;
+  background-color: #3B0086;
+  width: 600px;
+  height: 616.8px;
+  border-radius: 100px 0px 100px 0px;
+}
+.imgAbout{
+  box-shadow: 0 0 2px 0 #000;
+  width: 600px;
+  height: 616.8px;
+  border-radius: 100px 0px 100px 0px;
+   transform:rotate(20deg); 
+display: flex;
+  object-fit:cover;
+}
