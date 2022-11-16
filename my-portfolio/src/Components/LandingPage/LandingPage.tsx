@@ -1,14 +1,17 @@
 import React from 'react'
 import style from "./LandingPage.module.css";
+import { Link } from 'react-router-dom';
 export default function LandingPage() {
   return (
     <div>
-      <article className={style.homeConteiner}>
-        <section>
-          <h1>Hello I´am Tomás Pastore</h1>
-          <p>A full stack developer finding my first teamwork</p>
-        </section>
-      </article>
+      <section className={style.homeConteiner}>
+        <div className={style.sectionConteiner}>
+          <a className={style.contact} href="">Contact</a>         <div className={style.divInfo}>
+          <h1 className={style.title}>Hello I´am Tomás Pastore</h1>
+          <p className={style.description}>A full stack developer finding my first teamwork</p>
+          </div>
+        </div>
+      </section>
       </div>
   )
 }
