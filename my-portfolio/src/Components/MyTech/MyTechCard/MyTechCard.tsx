@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "./MyTech.module.css";
+import style from "./MyTechCard.module.css";
 export default function MyTech() {
   return (
     <section id="myTech" className={style.sectionMyTech}>

@@ -11,10 +11,10 @@ export default function Nav() {
         <div><p>Full Stack Developer</p></div>
         </div>
         <div className={style.options}>
-          <div><a href="">About Me</a></div>
-          <div><a href="">My Tech</a></div>
-          <div><a href="">My Projects</a></div>
-          <div><a href="">Contact</a></div>
+          <div><a href="#aboutMe">About Me</a></div>
+          <div><a href="#myTech">My Tech</a></div>
+          <div><a href="#myProjects">My Projects</a></div>
+          <div><a href="#contact">Contact</a></div>
         </div>
         <div className={style.optionsIcons}>
           <div><FontAwesomeIcon className={style.icons} icon={ faAddressCard} /></div>

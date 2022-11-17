@@ -1,0 +1,73 @@
+{"frontend":[
+{
+  "name":"HTML",
+  "experience":"Experienced"
+},
+{
+  "name":"CSS",
+  "experience":"Proficient"
+},
+{
+  "name":"JavaScript",
+  "experience":"Experienced"
+},
+{
+  "name":"TypeScript",
+  "experience":"intermediate"
+},
+{
+  "name":"React",
+  "experience":"Proficient"
+},
+{
+  "name":"Redux",
+  "experience":"Proficient"
+},
+{
+  "name":"Tailwind",
+  "experience":"intermediate"
+},
+{
+  "name":"Bootstrap",
+  "experience":"intermediate"
+}
+],
+  "backend":[
+    {
+      "name":"NodeJs",
+      "experience":"Experienced"
+    },
+    {
+      "name":"MongoDB",
+      "experience":"Proficient"
+    },
+    {
+      "name":"Mongoose",
+      "experience":"Proficient"
+    },
+    {
+      "name":"Express",
+      "experience":"Proficient"
+    },
+    {
+      "name":"Sequelize",
+      "experience":"Proficient"
+    },
+    {
+      "name":"PostgreSQL",
+      "experience":"Proficient"
+    },
+    {
+      "name":"MySQL",
+      "experience":"Basic"
+    },
+    {
+      "name":"PHP",
+      "experience":"Basic"
+    },
+    {
+      "name":"Python",
+      "experience":"intermediate"
+    }
+  ]
+}
