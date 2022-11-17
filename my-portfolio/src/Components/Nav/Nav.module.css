@@ -1,6 +1,8 @@
 .divPa{
   display: flex;
-  justify-content:center
+  position: relative;
+  justify-content:center;
+  z-index: 1;
 }
 .conteiner{
   background-color: rgb(036 ,000 ,070 , 0.5);
