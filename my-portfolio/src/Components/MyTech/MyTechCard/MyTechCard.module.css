@@ -1,0 +1,35 @@
+.text{
+  width: 35%;
+/*   margin-left: 5%;
+  margin-right: 5%; */
+  text-align: left;
+}
+.name{
+  font-size: 25px;
+  color: white;
+}
+.experience{
+  color: #E0AAFF;
+  font-size: 20px;
+  letter-spacing: 2px; 
+}
+
+@media (max-width:1024px) {
+  .name{
+    font-size: 20px;
+  }
+  .experience{
+    font-size: 15px;
+    letter-spacing: 2px; 
+  }
+} 
+@media (max-width:600px) {
+
+  .name{
+    font-size: 12px;
+  }
+  .experience{
+    font-size: 10px;
+    letter-spacing: 2px; 
+  }
+}

@@ -9,30 +9,30 @@ export default function MyTech() {
       <h3 className={style.titleTech}>
         Frontend Development
       </h3>
-      <div>
+      <div className={style.listTechs}>
         {json.frontend.map(e=>{
           return(
-            <div>
+
               <MyTechCard name={e.name} experience={e.experience} />
-            </div>
+
           )
         })}
-      </div>
+        </div>
     </div>
     <div  className={style.tech}>
       <h3 className={style.titleTech}>
         Backend Development
         
       </h3>
-      <div>
+      <div className={style.listTechs}>
       {json.backend.map(e=>{
           return(
-            <div>
+            
               <MyTechCard name={e.name} experience={e.experience} />
-            </div>
+            
           )
         })}
-      </div>
+        </div>
     </div>
     </section>
 
