@@ -18,8 +18,8 @@ function App() {
     <Nav />
       </header>
         <article>
-{/*         <LandingPage /> */}
-{/*         <AboutMe/> */}
+       <LandingPage /> 
+        <AboutMe/> 
         <MyTech/>
 {/*         <MyProjects/>
         <Contact/>  */}
