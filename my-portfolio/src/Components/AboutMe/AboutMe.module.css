@@ -16,27 +16,27 @@
 }
 .about{
   color: #fff;
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
 
 }
 .descriptionMe{
   color: #fff;
-  font-size: 45px;
+  font-size: 40px;
   text-align: center;
 }
 .coverImg{
   margin: 20px;
   background-color: #3B0086;
-  width: 600px;
-  height: 616.8px;
+  width: 500px;
+  height: 514px;
   border-radius: 100px 0px 100px 0px;
 }
 .imgAbout{
   position: relative;
   box-shadow: 0 0 2px 0 #000;
-  width: 600px;
-  height: 616.8px;
+  width: 500px;
+  height: 514px;
   border-radius: 100px 0px 100px 0px;
   -webkit-transform:rotate(20deg); 
   transform:rotate(20deg);
