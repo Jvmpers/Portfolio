@@ -1,17 +1,17 @@
 import React from 'react'
 import style from "./MyTechCard.module.css";
-export default function MyTech() {
+
+interface Props{
+  name:string;
+  experience:string
+
+}
+export default function MyTechCard({name, experience}:Props) {
   return (
     <section id="myTech" className={style.sectionMyTech}>
     <div className={style.tech}>
-      <h3 className={style.titleTech}>
-        Frontend Development
-      </h3>
-    </div>
-    <div  className={style.tech}>
-      <h3 className={style.titleTech}>
-        Backend Development
-      </h3>
+        <p>{name}</p>
+        <p>{experience}</p>
     </div>
     </section>
 
