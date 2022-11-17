@@ -21,7 +21,48 @@
 .titleTech{
   font-size: 30px;
   margin-top:7%;
+  margin-bottom:7%;
   text-align: center;  
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: #C77DFF;
+}
+.listTechs{
+  display: flex;
+  height: 60%;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+@media (max-width:1000px) {
+  .sectionMyTech{
+    flex-direction: column;
+  }
+  .tech{
+    height: 40%;
+    width: 80%;
+    margin :10px;
+  }
+}
+@media (max-width:800px) {
+  .titleTech{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: ;
+  }
+  .listTechs{
+    height: 70%;
+  }
+
+  .tech{
+    height: 35%;
+    width: 80%;
+    margin :10px;
+  }
+  
+}
+
+@media (max-width:400px){
+
+  .titleTech{
+    font-size: 20px;
+  }
 }

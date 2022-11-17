@@ -8,12 +8,9 @@ interface Props{
 }
 export default function MyTechCard({name, experience}:Props) {
   return (
-    <section id="myTech" className={style.sectionMyTech}>
-    <div className={style.tech}>
-        <p>{name}</p>
-        <p>{experience}</p>
+    <div className={style.text}>
+        <p className={style.name}>{name}</p>
+        <p className={style.experience}>{experience}</p>
     </div>
-    </section>
-
   )
 }

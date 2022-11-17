@@ -19,10 +19,10 @@ function App() {
       </header>
         <article>
 {/*         <LandingPage /> */}
-        <AboutMe/>
-{/*         <MyTech/>
-        <MyProjects/>
-        <Contact/> */}
+{/*         <AboutMe/> */}
+        <MyTech/>
+{/*         <MyProjects/>
+        <Contact/>  */}
         </article>
     </div>
    </BrowserRouter>
