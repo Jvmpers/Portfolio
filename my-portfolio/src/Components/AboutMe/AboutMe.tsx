@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <section id="aboutMe" className={style.div}>
           <div className={style.textAbout}>
-            <h1  className={style.about}>About Me</h1>
+            <h2  className={style.about}>About Me</h2>
             <p className={style.descriptionMe}>
               Full Stack Web Developer. I am looking for a job where I can train and learn new technologies and be part of a work team. I characterize myself as an empathetic, cooperative, tenacious person and solver of logical and workgroup problems.
             </p>

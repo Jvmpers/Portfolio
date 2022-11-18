@@ -1,0 +1,18 @@
+.sectionMyProjects{
+  background-color: #000;
+  min-height: 100vh;
+  display:flex;
+   margin: 0;
+   width: 100%;
+   z-index: -1;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+}
+
+.listProjects{
+  background-color: red;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
