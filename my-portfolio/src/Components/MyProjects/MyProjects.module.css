@@ -15,4 +15,23 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  
+}
+
+.carouselProjects{
+  background-color: aliceblue;
+  border: 20px solid blue;
+  display: flex; 
+  flex-direction: column;
+}
+
+.sliderProjects{
+  background-color: red;
+  display: flex;
+  height: 40vw;
+  width: 35vw;
+  
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 20px solid yellow;
 }
