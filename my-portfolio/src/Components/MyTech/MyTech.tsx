@@ -5,6 +5,7 @@ import json from "./techs.json";
 export default function MyTech() {
   return (
     <section id="myTech" className={style.sectionMyTech}>
+      <h2 className={style.titleMyTech}>My Tech</h2>
     <div className={style.tech}>
       <h3 className={style.titleTech}>
         Frontend Development

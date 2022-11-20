@@ -3,13 +3,8 @@ import style from "./MyProjects.module.css";
 import json from "./myProjects.json";
 import MyProjectsCard from "./MyProjectsCard/MyProjectsCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import "pure-react-carousel/dist/react-carousel.es.css";
 import {
   faChevronLeft,
   faChevronRight,
@@ -25,36 +20,66 @@ export default function MyProjects() {
   };
 
   return (
-    <section id="myProjects" className={style.sectionMyProjects}>
+    <section id="myProjects"  className={style.sectionMyProjects} >
+      <div className={style.myprojectsContent} >
+
+  
       <div className={style.textMyprojects}>
         <h2 className={style.titleMyprojects}>My Projects</h2>
+      </div> 
+      <CarouselProvider
+        naturalSlideWidth={100}
+        naturalSlideHeight={125}
+        totalSlides={json.length}
+         visibleSlides={3} 
+       infinite={true} 
+
+       className={style.carouselProjects} 
+      >
+                <ButtonBack className={style.buttonBack}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </ButtonBack>
+
+        <Slider   className={style.sliderProjects} >
+        {json.map((e: any, i: number) =>
+              <Slide  className={style.slideProject} key={i} index={i}> 
+                  <MyProjectsCard props={e} /> 
+                  {json[i+3] && <MyProjectsCard props={json[i+3]} />}
+               </Slide> 
+     
+          )} 
+        </Slider>
+        <ButtonNext className={style.buttonNext}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </ButtonNext>
+      </CarouselProvider>
       </div>
       <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={125}
-        totalSlides={json.length - 1}
-        visibleSlides={2}
-        infinite={true}
-        className={style.carouselProjects}
+        totalSlides={json.length}
+         visibleSlides={1} 
+       infinite={true} 
+
+       className={style.carouselProjectsSmall} 
       >
-        <Slider className={style.sliderProjects}>
-          {json.map(
-            (e: any, i: number) =>
-              i !== 0 && (
-                <Slide key={i} index={i}>
-                  {" "}
-                  <MyProjectsCard props={e} />{" "}
-                </Slide>
-              )
-          )}
-        </Slider>
-        <ButtonBack className="">
+                <ButtonBack className={style.buttonBack}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </ButtonBack>
-        <ButtonNext className="">
+
+        <Slider   className={style.sliderProjects} >
+        {json.map((e: any, i: number) =>
+              <Slide  className={style.slideProject} key={i} index={i}> 
+                  <MyProjectsCard props={e} /> 
+             </Slide> 
+     
+          )} 
+        </Slider>
+        <ButtonNext className={style.buttonNext}>
           <FontAwesomeIcon icon={faChevronRight} />
         </ButtonNext>
       </CarouselProvider>
+   
     </section>
   );
 }

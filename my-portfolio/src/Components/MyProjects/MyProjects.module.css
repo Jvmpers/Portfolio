@@ -1,37 +1,117 @@
 .sectionMyProjects{
   background-color: #000;
   min-height: 100vh;
-  display:flex;
+  display:flex; 
    margin: 0;
    width: 100%;
    z-index: -1;
    height: 100vh;
-   justify-content: center;
-   align-items: center;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
 }
 
+.myprojectsContent{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} 
+.textMyprojects{
+  color: #fff;
+  font-size: 35px;
+  margin-bottom:2% ;
+/*   background-color: #C77DFF; */
+
+}
 .listProjects{
   background-color: red;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+/*    display: flex;  */
   
 }
 
 .carouselProjects{
-  background-color: aliceblue;
-  border: 20px solid blue;
-  display: flex; 
-  flex-direction: column;
+  margin: auto;
+/*   background-color: aliceblue;
+  border: 20px solid blue; */
+/*   display: flex; 
+  flex-direction:row; */
+  display: flex;
+  width: 80vw;
+  height: auto;
 }
 
 .sliderProjects{
-  background-color: red;
-  display: flex;
-  height: 40vw;
-  width: 35vw;
+/*   background-color: red;
+  border: 2px solid green; */
+  width: 100%; 
+  height: 100%;
+/*   border: 2px solid green; */
+}
+
+.slideProject{
+  display: flex; 
+/*   border: 2px solid violet;  */
+   
+}
+.buttonBack{
+  background-color: #000;
+  color: #C77DFF;
+  border-right: 2px solid #C77DFF;
+  font-size: 30px;
+}
+.buttonNext{
+  background-color: #000;
+  color: #C77DFF;
+  border-left: 2px solid #C77DFF;
+  font-size: 30px;
+}
+
+.carouselProjectsSmall{
+  display: none;
+}
+@media (max-width:1000px) {
+  .carouselProjects{
+  display: none; 
+  }
+  .carouselProjectsSmall{
+    margin: auto;
+/*        background-color: aliceblue; */
+/*       border: 20px solid blue;  */
+    /*   display: flex; 
+      flex-direction:row; */
+      align-items: center;
+/*       background-color: #C77DFF; */
+      display: flex;
+      width: 80vw;
+      height: auto;
+/*       background-color: #C77DFF; */
+  }
+  .textMyprojects{
+    color: #fff;
+    font-size: 30px;
+/*     background-color: #C77DFF; */
+  /*   background-color: #C77DFF; */
   
-  justify-content: space-between;
-  flex-wrap: wrap;
-  border: 20px solid yellow;
+  }
+  .sliderProjects{
+/*       background-color: #C77DFF; */
+  }
+  .buttonBack{
+    color: #C77DFF;
+    border: 0px ;
+    font-size: 30px;
+    height: 40%;
+  }
+  .buttonNext{
+    height: 40%;
+    color: #C77DFF;
+    border: 0px;
+    font-size: 30px;
+  }
+  .slideProject{
+     align-items: center;
+     display: flex;
+     border: 2px solid violet; 
+     height: 10vh;
+  }
 }
