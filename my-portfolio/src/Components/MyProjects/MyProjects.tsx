@@ -53,7 +53,7 @@ export default function MyProjects() {
           <FontAwesomeIcon icon={faChevronRight} />
         </ButtonNext>
       </CarouselProvider>
-      </div>
+  
       <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={125}
@@ -69,7 +69,7 @@ export default function MyProjects() {
 
         <Slider   className={style.sliderProjects} >
         {json.map((e: any, i: number) =>
-              <Slide  className={style.slideProject} key={i} index={i}> 
+              <Slide  key={i} index={i} className={style.slideProject}> 
                   <MyProjectsCard props={e} /> 
              </Slide> 
      
@@ -79,7 +79,7 @@ export default function MyProjects() {
           <FontAwesomeIcon icon={faChevronRight} />
         </ButtonNext>
       </CarouselProvider>
-   
+      </div>
     </section>
   );
 }

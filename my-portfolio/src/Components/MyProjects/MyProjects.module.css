@@ -8,19 +8,19 @@
    height: 100vh;
     justify-content: center; 
     align-items: center; 
-    flex-direction: column; 
 }
 
 .myprojectsContent{
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+margin: 0px;
+
 } 
 .textMyprojects{
   color: #fff;
-  font-size: 35px;
-  margin-bottom:2% ;
-/*   background-color: #C77DFF; */
+  font-size: 40px;
+  margin-left: 30px ;
 
 }
 .listProjects{
@@ -31,13 +31,14 @@
 
 .carouselProjects{
   margin: auto;
+/*    background-color: aliceblue; */
 /*   background-color: aliceblue;
   border: 20px solid blue; */
 /*   display: flex; 
   flex-direction:row; */
   display: flex;
   width: 80vw;
-  height: auto;
+  height: auto
 }
 
 .sliderProjects{
@@ -50,18 +51,19 @@
 
 .slideProject{
   display: flex; 
+/*   background-color: #C77DFF; */
 /*   border: 2px solid violet;  */
    
 }
 .buttonBack{
-  background-color: #000;
+  background-color: transparent;
   color: #C77DFF;
   border-right: 2px solid #C77DFF;
   font-size: 30px;
 }
 .buttonNext{
-  background-color: #000;
   color: #C77DFF;
+  background-color: transparent;
   border-left: 2px solid #C77DFF;
   font-size: 30px;
 }
@@ -69,49 +71,96 @@
 .carouselProjectsSmall{
   display: none;
 }
+
+@media (max-width:1400px) {
+  .textMyprojects{
+    color: #fff;
+    font-size: 35px;
+  }
+
+}
+
 @media (max-width:1000px) {
+
+  .sectionMyProjects{
+    background-color: #000;
+    min-height: 50vh;
+    display:flex; 
+     margin: 0;
+     width: 100%;
+     z-index: -1;
+     height:100vh;
+      justify-content: center; 
+      align-items: center; 
+  }
   .carouselProjects{
   display: none; 
-  }
-  .carouselProjectsSmall{
-    margin: auto;
-/*        background-color: aliceblue; */
-/*       border: 20px solid blue;  */
-    /*   display: flex; 
-      flex-direction:row; */
-      align-items: center;
-/*       background-color: #C77DFF; */
-      display: flex;
-      width: 80vw;
-      height: auto;
-/*       background-color: #C77DFF; */
   }
   .textMyprojects{
     color: #fff;
     font-size: 30px;
-/*     background-color: #C77DFF; */
-  /*   background-color: #C77DFF; */
+    margin-bottom: -30%;
+  }
+  .carouselProjectsSmall{
+/*       display: flex;
+      min-width: 80vh;
+      min-height: 30vh;
+      background-color: #fff; */
+      margin: auto;
+      /*    background-color: aliceblue; */
+      /*   background-color: aliceblue;
+        border: 20px solid blue; */
+      /*   display: flex; 
+        flex-direction:row; */
+        display: flex;
+        width: 90vw;
+        height: auto;
+  }
+  .sliderProjects{
+    /*   background-color: red;
+      border: 2px solid green; */
+      width: 100%; 
+      height: 100%;
+    /*   border: 2px solid green; */
+    }
+  /* .textMyprojects{
+    color: #fff;
+    font-size: 30px;
+
   
   }
   .sliderProjects{
-/*       background-color: #C77DFF; */
+background-color: #C77DFF;
+width: auto; 
+height: auto;
+
   }
   .buttonBack{
     color: #C77DFF;
     border: 0px ;
     font-size: 30px;
-    height: 40%;
   }
   .buttonNext{
-    height: 40%;
+    color: #C77DFF;
+    border: 0px;
+    font-size: 30px;
+  }*/
+  .buttonBack{
+    color: #C77DFF;
+    border: 0px ;
+    font-size: 30px;
+  }
+  .buttonNext{
     color: #C77DFF;
     border: 0px;
     font-size: 30px;
   }
   .slideProject{
+    display: flex;
      align-items: center;
-     display: flex;
-     border: 2px solid violet; 
-     height: 10vh;
-  }
+     margin: auto;
+     height: auto;
+/*      border: 2px solid violet; 
+     background-color: antiquewhite; */
+  } 
 }
