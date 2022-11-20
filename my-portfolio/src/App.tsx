@@ -20,8 +20,8 @@ function App() {
         <article>
       <LandingPage /> 
         <AboutMe/> 
-        <MyTech/> 
-{/*       <MyProjects/> */}
+        <MyTech/>  
+      <MyProjects/> 
    {/*        <Contact/>  */}
         </article>
     </div>
