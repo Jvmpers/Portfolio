@@ -6,6 +6,9 @@ export default function MyTech() {
   return (
     <section id="myTech" className={style.sectionMyTech}>
       <h2 className={style.titleMyTech}>My Tech</h2>
+      <div  className={style.techs}>
+
+      
     <div className={style.tech}>
       <h3 className={style.titleTech}>
         Frontend Development
@@ -34,6 +37,7 @@ export default function MyTech() {
           )
         })}
         </div>
+    </div>
     </div>
     </section>
 

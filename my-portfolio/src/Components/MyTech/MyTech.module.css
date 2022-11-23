@@ -8,19 +8,29 @@
    height: 100vh;
    justify-content: center;
    align-items: center;
-   flex-wrap: wrap;
+/*    flex-wrap: wrap; */
+flex-direction: column;
 }
 .titleMyTech{
   color: #fff;
   font-size:45px;
   width: 80%;
+  margin-bottom: 1%;
+}
+.techs{
+  width: 100vw;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .tech{
   background-color: #5A189A;
   height: 60vh;
   width: 40%;
   margin: 0 2vh;
-  border-radius: 50px;
+  border-radius: 50px
 }
 
 .titleTech{

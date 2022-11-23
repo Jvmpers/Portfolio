@@ -19,9 +19,8 @@ margin: 0px;
 } 
 .textMyprojects{
   color: #fff;
-  font-size: 40px;
-  margin-left: 30px ;
-
+  font-size: 35px;
+width: 80vw;
 }
 .listProjects{
   background-color: red;

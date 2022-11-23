@@ -72,7 +72,6 @@ export default function MyProjects() {
               <Slide  key={i} index={i} className={style.slideProject}> 
                   <MyProjectsCard props={e} /> 
              </Slide> 
-     
           )} 
         </Slider>
         <ButtonNext className={style.buttonNext}>
