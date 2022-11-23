@@ -1,0 +1,84 @@
+.containerContact{
+  background-color: #151515;
+  min-height: 100vh;
+  display:flex;
+   margin: 0;
+   width: 100%;
+   z-index: -1;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   flex-direction: column;
+}
+.divContain{
+  display: flex;
+}
+.textCenter{
+  color: #fff;
+  font-size: 45px;
+}
+
+.formContact{
+display: flex;
+/* background-color: aliceblue; */
+width: 80vw;
+height: 50%;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.inputName{
+  width: 40%;
+  color: #e0aaff;
+  font-size:x-large ;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fff;
+
+}
+.inputEmail{
+  width: 40%;
+  background-color: transparent;
+  color: #e0aaff;
+  font-size:x-large ;
+  border: 0px;
+  border-bottom: 2px solid #fff;
+}
+.inputSubject{
+  width: 90%;
+  color: #e0aaff;
+  font-size:x-large ;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fff;
+}
+.textMessaje{
+  color:#fff;
+  margin: 1%;
+  width: 90%;
+  max-width: 90%;
+  max-height: 90%;
+  border: 0px;
+  font-size: x-large ;
+  background-color: rgba(90, 24, 154, 0.4);
+}
+.submitContact{
+  margin: 1%;
+  width: 90%;
+  color:#fff;
+  font-size:x-large;
+  border-radius: 10px;
+  opacity: 0.6;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background: linear-gradient(to right,#3c096c, #ff6d00);
+}
+.textContact{
+  display: flex;
+  background-color: #e0aaff;
+}
+.aContact{
+  color: #fff;
+  font-size: xx-large;
+  margin: 1%;
+}
