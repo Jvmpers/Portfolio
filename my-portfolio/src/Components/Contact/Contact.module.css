@@ -7,7 +7,7 @@
    z-index: -1;
    height: 100vh;
    justify-content: center;
-   align-items: center;
+    align-items: center; 
    flex-wrap: wrap;
    flex-direction: column;
 }
@@ -16,7 +16,11 @@
 }
 .textCenter{
   color: #fff;
-  font-size: 45px;
+  font-size: 50px;
+  margin-bottom: 1%;
+  text-align: left;
+/*   background-color: #3c096c; */
+  width: 80%;
 }
 
 .formContact{
@@ -30,24 +34,24 @@ flex-wrap: wrap;
 
 .inputName{
   width: 40%;
-  color: #e0aaff;
+  color: #fff;
   font-size:x-large ;
   background-color: transparent;
   border: 0px;
   border-bottom: 2px solid #fff;
 
 }
-.inputEmail{
+.inputSubject{
   width: 40%;
   background-color: transparent;
-  color: #e0aaff;
+  color: #fff;
   font-size:x-large ;
   border: 0px;
   border-bottom: 2px solid #fff;
 }
-.inputSubject{
+.inputEmail{
   width: 90%;
-  color: #e0aaff;
+  color: #fff;
   font-size:x-large ;
   background-color: transparent;
   border: 0px;
@@ -59,6 +63,7 @@ flex-wrap: wrap;
   width: 90%;
   max-width: 90%;
   max-height: 90%;
+  resize: none;
   border: 0px;
   font-size: x-large ;
   background-color: rgba(90, 24, 154, 0.4);
@@ -66,19 +71,36 @@ flex-wrap: wrap;
 .submitContact{
   margin: 1%;
   width: 90%;
-  color:#fff;
+  color:#000;
   font-size:x-large;
   border-radius: 10px;
-  opacity: 0.6;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  background: linear-gradient(to right,#3c096c, #ff6d00);
+/*   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background: linear-gradient(to right,#3c096c, #ff6d00); */
 }
 .textContact{
   display: flex;
   background-color: #e0aaff;
 }
+.divText{
+  width: 20%;
+}
 .aContact{
   color: #fff;
-  font-size: xx-large;
-  margin: 1%;
+  font-size: 60px;
+  margin: 10%;
+}
+@media (max-width:1000px) {
+  .divContain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .divText{
+    width: 100%;
+    justify-content: center;
+  }
+  .aContact{
+    color: #fff;
+    font-size: 50px;
+  }
 }
