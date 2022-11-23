@@ -18,7 +18,7 @@ flex-direction: column;
   margin-bottom: 1%;
 }
 .techs{
-  width: 100vw;
+  width: 100%;
   height: 90%;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ flex-direction: column;
     flex-direction: column;
   }
   .tech{
-    height: 40%;
+    height: 45%;
     width: 80%;
     margin :10px;
   }
