@@ -59,14 +59,21 @@ width: 80vw;
   color: #C77DFF;
   border-right: 2px solid #C77DFF;
   font-size: 30px;
+  transition-duration: 0.5s;
 }
 .buttonNext{
   color: #C77DFF;
   background-color: transparent;
   border-left: 2px solid #C77DFF;
   font-size: 30px;
+  transition-duration: 0.5s;
 }
-
+.buttonBack:hover{
+  color:#fff;
+}
+.buttonNext:hover{
+  color:#fff;
+}
 .carouselProjectsSmall{
   display: none;
 }

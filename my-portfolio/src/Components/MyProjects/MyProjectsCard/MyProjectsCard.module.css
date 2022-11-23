@@ -32,6 +32,11 @@ justify-content: center;
 align-items: center;
 display: flex;
 font-size: 30px;
+transition-duration: 0.5s;
+}
+.nameProject:hover{
+  color: #C77DFF;
+  background-color:#240046 ;
 }
 .gitHubProject{
   text-decoration: none;
@@ -46,6 +51,12 @@ font-size: 30px;
   align-items: center;
   display: flex;
   font-size: 30px;
+  transition-duration: 0.5s;
+}
+.gitHubProject:hover{
+  color: #240046;
+  background-color:#C77DFF;
+  border-color: #240046;
 }
 
 @media (max-width:1400px) {
