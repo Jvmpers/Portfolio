@@ -18,10 +18,10 @@ function App() {
     <Nav />
       </header>
         <article>
-{/*       <LandingPage /> 
+                 <LandingPage /> 
         <AboutMe/> 
         <MyTech/>  
-      <MyProjects/>  */}
+      <MyProjects/>  
          <Contact/>  
         </article>
     </div>

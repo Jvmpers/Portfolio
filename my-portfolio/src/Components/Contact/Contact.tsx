@@ -1,6 +1,8 @@
 import React,{useRef} from 'react'
 import style from "./Contact.module.css"
 import emailjs from "@emailjs/browser"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub} from '@fortawesome/fontawesome-free-brands';
 export default function Contact() {
 const form = useRef<any>();
 const sendEmail=(e:any):void => {
@@ -13,17 +15,25 @@ const sendEmail=(e:any):void => {
   });
   e.target.reset()
 };
+const iconFaLinkedin:any = faLinkedin;
+ const iconFaGithub:any = faGithub; 
  return (
     <section id='contact'>
        <div className={style.containerContact}>
-        <h2 className={style.textCenter}> Contact Us </h2>
-        <form  ref={form} onSubmit={sendEmail} action="">
+        <h2 className={style.textCenter}> Contact{/*  <FontAwesomeIcon className={style.icons} icon={iconFaLinkedin} /> */} </h2>
+        <div className={style.divContain}>
+        <form  ref={form} onSubmit={sendEmail} className={style.formContact} action="">
           <input className={style.inputName} type="text" placeholder="Full Name" name="user_name" required />
-          <input type="email" placeholder="email" name="user_email" required />
-          <input type="text" placeholder="Subject" name="subject" required />
-           <textarea name="messaje" ></textarea>
-           <button type="submit" className={style.submit}>Send Messaje</button>
+          <input className={style.inputEmail} type="email" placeholder="email" name="user_email" required />
+          <input className={style.inputSubject} type="text" placeholder="Subject" name="subject" required />
+           <textarea className={style.textMessaje} cols={30} rows={8} name="messaje" ></textarea>
+           <button className={style.submitContact} type="submit" >Send Messaje</button>
           </form>
+          <div className={style.divText} >
+            <a  className={style.aContact} href=""><FontAwesomeIcon className={style.icons} icon={iconFaLinkedin} /></a>
+            <a className={style.aContact} href=""><FontAwesomeIcon className={style.icons} icon={iconFaGithub} /></a>
+          </div>
+          </div>
        </div>
     </section>
   )
