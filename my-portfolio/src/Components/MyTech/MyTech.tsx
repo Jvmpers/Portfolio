@@ -14,10 +14,10 @@ export default function MyTech() {
         Frontend Development
       </h3>
       <div className={style.listTechs}>
-        {json.frontend.map(e=>{
+        {json.frontend.map((e,i)=>{
           return(
 
-              <MyTechCard name={e.name} experience={e.experience} />
+              <MyTechCard key={i} name={e.name} experience={e.experience} />
 
           )
         })}
@@ -29,10 +29,10 @@ export default function MyTech() {
         
       </h3>
       <div className={style.listTechs}>
-      {json.backend.map(e=>{
+      {json.backend.map((e,i)=>{
           return(
             
-              <MyTechCard name={e.name} experience={e.experience} />
+              <MyTechCard key={i} name={e.name} experience={e.experience} />
             
           )
         })}

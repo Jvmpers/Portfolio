@@ -19,6 +19,7 @@
   font-size: 25px;
   margin: 0px 50px;
   text-decoration: none;
+  transition-duration: 0.5s;
 }
 
 .profile{
@@ -56,8 +57,12 @@
   visibility: hidden;
   display: none;
 }
+.hamburgerMenu{
+  visibility: hidden;
+  display: none;
+}
 .options div a:hover{
-  color: aqua;
+  color: #C77DFF;
   cursor: pointer;
 }
 
@@ -91,10 +96,11 @@
   .optionsIcons div .icons{
     color: #fff;
     font-size:30px;
+    transition-duration: 0.5s;
   }
 
   .optionsIcons div .icons:hover{
-    color: aqua;
+    color: #C77DFF;
     cursor: pointer;
   }
 
@@ -131,7 +137,20 @@
   .optionsIcons{
     display: none;
   }
-
+  .hamburgerMenu{
+    display: flex;
+    position: fixed;
+    visibility: visible;
+    height: 40px;
+    width: 60vw;
+    color:#fff;
+    bottom: 20%;
+    left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
   .hamburger{
     display: flex;
     position: fixed;
@@ -155,8 +174,13 @@
     top:6px;
     justify-content: center;
   }
-  .hamburger:hover{
-    color: lightblue;
-    outline: 2px solid lightblue;
+  .icons:hover{
+    color: #C77DFF;
+    cursor: pointer;
   }
+  .icons{
+    font-size:20px;
+    color:#fff;
+  }
+
 }
