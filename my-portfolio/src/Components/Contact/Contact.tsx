@@ -66,11 +66,11 @@ export default function Contact() {
               cols={30}
               rows={8}
               placeholder="Type here for Message.."
-              name="messaje"
+              name="message"
               required
             ></textarea>
             <button className={style.submitContact} type="submit">
-              Send Messaje
+              Send Message
             </button>
           </form>
           <div className={style.divText}>
