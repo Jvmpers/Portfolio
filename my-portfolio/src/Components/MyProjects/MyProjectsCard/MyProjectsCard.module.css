@@ -10,6 +10,10 @@ margin: 4% 0px;
   height: 75%;
   margin: auto;
   border-radius: 0px 25px 10px  10px ;
+  transition-duration: 0.3s;
+}
+.imgProject:hover{
+  filter: brightness(65%);
 }
 .buttonsProject{
   width: 100%;

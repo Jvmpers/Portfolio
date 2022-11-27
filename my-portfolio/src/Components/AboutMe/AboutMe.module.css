@@ -38,9 +38,9 @@
   z-index: 0;
 }
 @media (max-width:1700px) {
-  .about{
+/*   .about{
     font-size: 35px;
-  }
+  } */
   .descriptionMe{
     font-size:30px;
   }
@@ -53,9 +53,9 @@
   .imgAbout{
     width: 350px;
   }
-  .about{
+/*   .about{
     font-size: 30px;
-  }
+  } */
   .descriptionMe{
     font-size:25px;
   }
@@ -64,9 +64,9 @@
   .div{
     flex-direction: column;
   }
-  .about{
+/*   .about{
     font-size: 30px;
-  }
+  } */
   .descriptionMe{
     font-size:30px;
   }
@@ -85,8 +85,8 @@
     margin-top: 10vh;
   }
   .about{
-    font-size: 20px;
-  }
+    font-size: 40px;
+  } 
   .descriptionMe{
     font-size:15px;
   }
@@ -98,9 +98,9 @@
   .imgAbout{
     width: 210px;
   }
-  .about{
+/*   .about{
     font-size: 20px;
-  }
+  } */
   .descriptionMe{
     font-size:15px;
   }
